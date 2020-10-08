@@ -1,4 +1,4 @@
-FROM vishnunair/go-alpine-edge:latest
+FROM golang
 
 RUN cd /go && \
     go get -u github.com/qtvhao/mkcert && \
