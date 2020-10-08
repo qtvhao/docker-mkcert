@@ -1,8 +1,8 @@
 FROM vishnunair/go-alpine-edge:latest
 
 RUN cd /go && \
-    go get -u github.com/FiloSottile/mkcert && \
-    cd src/github.com/FiloSottile/mkcert && \
+    go get -u github.com/qtvhao/mkcert && \
+    cd src/github.com/qtvhao/mkcert && \
     go build -o /bin/mkcert
 
 WORKDIR /root/.local/share/mkcert
