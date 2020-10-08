@@ -1,4 +1,4 @@
-FROM golang
+FROM golang:1.15.2-buster
 
 RUN cd /go && \
     go get -u github.com/qtvhao/mkcert && \
